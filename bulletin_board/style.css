@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+/*
+Base style
+*/
+body{
+  font-family: 'Noto Sans JP', "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #333;
+}
+label, input, textarea, select, button{
+  cursor: pointer;
+}
+button{
+  border: none;
+}
+
+/*
+header
+*/
+.header{
+  height: 80px;
+  width: 100%;
+}
+.header > a{
+  text-decoration: none;
+  color: #333;
+}
+.header_title{
+  margin-top: 10px;
+  padding: 0;
+  height: 100%;
+  text-align: center;
+  font-size: 3em;
+}
+
+/*
+title
+*/
+.title{
+  width: 70%;
+  height: 70vh;
+  border: 2px solid #333;
+  margin-left: 15%;
+  margin-right: 15%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: scroll;
+}
+.title > a{
+  text-decoration: none;
+  color: #333;
+  font-size: 3em;
+  display: block;
+  width: 33.3%;
+  text-align: center;
+}
+.title > a:hover{
+  cursor: pointer;
+  border-bottom: 2px solid #333;
+}
+
+@media screen and (max-width: 768px){
+  .title{
+    display: block;
+  }
+  .title > a{
+    width: 100%;
+    font-size: 2em;
+  }
+}
+
+/*
+title_form
+*/
+.title_form{
+  width: 70%;
+  height: 20vh;
+  margin-top: 20px;
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: center;
+  display: block;
+}
+.input{
+  width: 30%;
+  margin-left: 35%;
+  margin-right: 35%;
+  display: block;
+  font-size: 30px;
+}
+.submit{
+  background-color: #333;
+  color: #fff;
+  margin-top: 10px;
+  font-size: 20px;
+  display: block;
+  width: 20%;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+/*
+post_content
+*/
+.title_name{
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+.title_h2{
+  margin: 0;
+  font-size: 40px;
+}
+.content{
+  width: 70%;
+  height: 60vh;
+  border: 2px #333 solid ;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.post_content{
+  font-size: 20px;
+  margin: 5px 0 5px;
+}
